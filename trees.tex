@@ -1,0 +1,126 @@
+\documentclass[12pt, fullpage,letterpaper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{qtree}
+
+\title{TREES}
+\date{}
+\begin{document}
+\maketitle
+
+% \Tree[.{i.nx0Vnx1Pnx2} 
+%         [.{S_{r}^{self}}
+%             [.{NP_{0}^{subj} $\downarrow$} 
+%             ]
+%             [.{VP^{self}}
+%                 [.{V^{self} $anchor$}
+%                 ]
+%                 [.{NP_{1}^{obj} $\downarrow$}
+%                 ]
+%                 [.{VP_{e}^{self}}
+%                     [.{V_{e}^{self}}
+%                         [.{_{v}^{self} TERM}
+%                         ]
+%                     ]
+%                     [.{PP^{ppobj}}
+%                         [.{P^{ppobj} $lex$}
+%                         ]
+%                         [.{NP_{2}^{ppobj} $\downarrow$}
+%                         ]
+%                     ]
+%                 ]
+%             ]
+%         ]
+% ]
+ \Tree[.{i.propername} 
+ [.{{NP}_{r}^{self} } 
+ [.{{PN}_{}^{self} anchor}  ]
+ ] 
+ ]
+%  \\ \ \\
+ \Tree[.{i.nx0Vnx1} 
+ [.{{S}_{r}^{self} } 
+ [.{{NP}_{0}^{subj} $\downarrow$}  ]
+ [.{{VP}_{}^{self} } 
+ [.{{V}_{}^{self} anchor}  ]
+ [.{{NP}_{1}^{obj} $\downarrow$}  ]
+ ]
+ ] 
+ ]
+%  \\ \ \\
+ \Tree[.{a.betavxPnx} 
+ [.{{VP}_{r}^{self} } 
+ [.{{VP}_{}^{subj} foot}  ]
+ [.{{PP}_{}^{self} } 
+ [.{{P}_{}^{self} anchor}  ]
+ [.{{NP}_{}^{obj} $\downarrow$}  ]
+ ]
+ ] 
+ ]
+%  \\ \ \\
+ \Tree[.{i.N} 
+ [.{{N}_{}^{self} anchor}  ] 
+ ]
+%  \\ \ \\
+ \Tree[.{a.An} 
+ [.{{N}_{r}^{self} } 
+ [.{{A}_{}^{self} anchor}  ]
+ [.{{N}_{f}^{self} foot}  ]
+ ] 
+ ]
+%  \\ \ \\
+\Tree[.{i.Dn} 
+[.{{NP}_{r}^{self} } 
+   [.{{D}_{}^{self} anchor}  ]
+   [.{{N}_{0}^{self} $\downarrow$} 
+   ]
+   ] 
+]
+ \Tree[.{i.nx0Vnx1Pnx2} 
+        [.{{S}_{r}^{self} } 
+            [.{{NP}_{0}^{subj} $\downarrow$}  ]
+            [.{{VP}_{}^{self} } 
+                [.{{V}_{}^{self} anchor}  ]
+                [.{{NP}_{1}^{obj} $\downarrow$}  ]
+                [.{{VP}_{e}^{self} } 
+                    [.{{V}_{e}^{self} } 
+                        [.{{}_{v}^{self} terminal}  ]
+                    ]
+                    [.{{PP}_{}^{ppobj} } 
+                        [.{{P}_{}^{ppobj} lex}  ]
+                        [.{{NP}_{2}^{ppobj} $\downarrow$}  ]
+                    ]
+                ]
+            ]
+        ] 
+ ]
+%  \\ \ \\
+
+% <tree id="i.nx0Vnx1Pnx2">
+%     <node cat="S" index="r" sem="self">
+%     <leaf cat="NP" type="substitution" index="0" sem="subj"/>
+%     <node cat="VP" sem="self">
+%         <leaf cat="V" type="anchor" sem="self"/>
+%         <leaf cat="NP" type="substitution" index="1" sem="obj"/>
+%         <node cat="VP" index="e" sem="self">
+%             <node cat="V" index="e" sem="self">
+%                 <leaf cat="" type="terminal" index="v" sem="self"/>
+%             </node>
+%             <node cat="PP" sem="ppobj">
+%                 <leaf cat="P" type="lex" sem="ppobj"/>
+%                 <leaf cat="NP" type="substitution" index="2" sem="ppobj"/>
+%             </node>
+%         </node>
+%     </node>
+%     </node>
+% </tree>
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
